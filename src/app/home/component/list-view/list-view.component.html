@@ -1,0 +1,14 @@
+
+<ion-card  *ngIf="gudangs.stock != '0'" [routerLink]="['./', gudangs.id]">
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img [src]="gudangs.imageUrl">
+    </ion-thumbnail>
+    <ion-label>
+      <h3>{{gudangs.brand}} {{gudangs.model}}</h3>
+      <p>{{gudangs.price}}</p>
+      <p>Tersedia {{gudangs.stock}}</p>
+    </ion-label>
+  </ion-item>
+</ion-card>
+

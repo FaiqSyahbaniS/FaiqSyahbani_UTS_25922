@@ -1,0 +1,40 @@
+<ion-card>
+  <div class="square">
+  <img [src]="gudangs.imageUrl" />
+</div>
+  <ion-card-header>
+    <ion-card-title>{{gudangs.brand}} {{gudangs.model}}</ion-card-title>
+    <ion-card-subtitle>{{gudangs.price}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    Tersedia {{gudangs.stock}}
+  </ion-card-content>
+</ion-card>
+      
+
+<!-- <ion-card [routerLink]="['./', gudangs.id]">
+  <img [src]="gudangs.imageUrl" />
+  <ion-card-header>
+    <ion-card-title>{{gudangs.brand}} {{gudangs.model}}</ion-card-title>
+    <ion-card-subtitle>{{gudangs.price}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    Tersedia {{gudangs.stock}}
+  </ion-card-content>
+</ion-card> -->
+ 
+ 
+
+ 
+ <!-- <ion-card [routerLink]="['./', gudangs.id]">
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img [src]="gudangs.imageUrl">
+    </ion-thumbnail>
+    <ion-label>
+      <h3>{{gudangs.brand}} {{gudangs.model}}</h3>
+      <p>{{gudangs.price}}</p>
+      <p>Tersedia {{gudangs.stock}}</p>
+    </ion-label>
+  </ion-item>
+</ion-card> -->

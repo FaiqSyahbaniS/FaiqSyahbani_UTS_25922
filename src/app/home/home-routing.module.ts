@@ -6,7 +6,20 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: ':gudangId',
+    loadChildren: () => import('./detail-barang/detail-barang.module').then( m => m.DetailBarangPageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('../admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('../about/about.module').then( m => m.AboutPageModule)
   }
+  
 ];
 
 @NgModule({

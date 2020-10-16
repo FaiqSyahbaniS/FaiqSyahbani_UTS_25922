@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { ListViewComponent } from './component/list-view/list-view.component';
+import { GridViewComponent } from './component/grid-view/grid-view.component';
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, ListViewComponent, GridViewComponent],
+  
 })
 export class HomePageModule {}

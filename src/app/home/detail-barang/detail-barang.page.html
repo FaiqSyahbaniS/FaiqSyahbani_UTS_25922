@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-img [src]="loadedGudang.imageUrl"></ion-img>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h1>{{loadedGudang.brand}} {{loadedGudang.model}}</h1>
+        <p>{{loadedGudang.price}}</p>
+        <p>Tersedia {{loadedGudang.stock}}</p>
+      </ion-label>
+    </ion-item>
+    <ion-item >
+      <ion-label *ngIf="loadedGudang.type === 'CPU'">
+        <h2>Tentang Produk</h2>
+        <p>Base Clock : {{loadedGudang.baseClock}}</p>
+        <p>Boost Clock : {{loadedGudang.boostClock}}</p>
+        <p>Core : {{loadedGudang.core}}</p>
+        <p>Thread : {{loadedGudang.thread}}</p>
+      </ion-label>
+      <ion-label *ngIf="loadedGudang.type === 'RAM'">
+        <h2>Tentang Produk</h2>
+        <p>Speed : {{loadedGudang.speed}}</p>
+        <p>Ukuran : {{loadedGudang.ukuran}}</p>
+      </ion-label>
+      <ion-label *ngIf="loadedGudang.type === 'Mobo'">
+        <h2>Tentang Produk</h2>
+        <p>Chipset : {{loadedGudang.chipset}}</p>
+        <p>Untuk Processor : {{loadedGudang.processor}}</p>
+      </ion-label>
+      <!-- <ion-label *ngIf="loadedGudang.type === 'GPU'">
+        <h2>Tentang Produk</h2>
+        <p>Base Clock : {{loadedGudang.baseClock}}</p>
+        <p>Boost Clock : {{loadedGudang.boostClock}}</p>
+        <p>Core : {{loadedGudang.core}}</p>
+        <p>Thread : {{loadedGudang.thread}}</p>
+        <p>Speed : {{loadedGudang.speed}}</p>
+        <p>Ukuran : {{loadedGudang.ukuran}}</p>
+        <p>Chipset : {{loadedGudang.chipset}}</p>
+        <p>Untuk Processor : {{loadedGudang.processor}}</p>
+      </ion-label> -->
+    </ion-item>
+  </ion-list>
+
+  <!-- <ion-item>
+    <ion-avatar slot="start">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+    </ion-avatar>
+    <ion-label>
+      Avatar Start, Button Item
+    </ion-label>
+  </ion-item>
+  
+  <ion-item href="#">
+    <ion-label>
+      Thumbnail End, Anchor Item
+    </ion-label>
+    <ion-thumbnail slot="end">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+    </ion-thumbnail>
+  </ion-item>
+  
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>H2 Title Text</h2>
+      <p>Button on right</p>
+    </ion-label>
+    <ion-button fill="outline" slot="end">View</ion-button>
+  </ion-item>
+  
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+    </ion-thumbnail>
+    <ion-label>
+      <h3>H3 Title Text</h3>
+      <p>Icon on right</p>
+    </ion-label>
+    <ion-icon name="close-circle" slot="end"></ion-icon>
+  </ion-item> -->
+</ion-content>
